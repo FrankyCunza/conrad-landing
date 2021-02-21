@@ -11,7 +11,7 @@
                 </div>
                 <div class="gallery__thumbs">
                     <ng-container *ngFor="let item of images; let i = index">
-                        <div class="gallery__thumbs__item" id="gallery__thumbs__item--{{i}}" [class.gallery__thumbs__item--active]="i === 0" attr.data-index={{i}} (click)="slider(i, 'thumbs')">
+                        <div class="gallery__thumbs__item" id="gallery__thumbs__item--{{i}}" [class.gallery__thumbs__item--active]="i === 0" attr.data-index={{i}} (click)="slider(i, 'thumbs', $event)">
                             <img src="../../assets/images/{{item.image}}.png" alt="">
                         </div>
                     </ng-container>

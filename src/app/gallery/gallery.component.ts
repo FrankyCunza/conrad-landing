@@ -34,10 +34,19 @@ export class GalleryComponent implements OnInit {
     ]
   }
 
-  slider(index, group) {
+  slider(index, group, e) {
+    const thumbs = document.getElementsByClassName('gallery__thumbs__item');
     if(group == 'thumbs') {
       document.getElementById('gallery__items').style.transform = `translateX(-${index}00%)`;
-      console.log(index);
+      
+      // Add border style in thumbs
+      for(var i = 0; i < thumbs.length; i++) {
+        if(i == index) {
+          thumbs[i].classList.add('gallery__thumbs__item--active');
+        } else {
+          thumbs[i].classList.remove('gallery__thumbs__item--active');
+        }
+      }
     }
   }
 

@@ -6,6 +6,7 @@
 .gallery__content{
     position: relative;
     overflow: hidden;
+    border-radius: 6px;
 }
 
 .gallery__items{
@@ -67,6 +68,7 @@
     overflow: hidden;
     cursor: pointer;
     border-radius: 4px;
+    border: 3px solid transparent;
 }
 .gallery__thumbs__item + .gallery__thumbs__item{
     margin-left: 8px;
