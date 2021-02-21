@@ -6,11 +6,7 @@
     display: flex;
     align-items: center;
 }
-@media screen and (max-width: 768px) {
-    .front__row{
-        display: grid;
-    }
-}
+
 
 .front__shortDescription{
     width: 275px;
@@ -54,4 +50,22 @@
     font-size: 17px;
     line-height: 120%;
     color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 768px) {
+    .front__row{
+        flex-wrap: wrap;
+    }
+    .front__title{
+        font-size: 24px;
+    }
+    .front__description{
+        font-size: 14px;
+    }
+    .front__contact{
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
+    }
 }

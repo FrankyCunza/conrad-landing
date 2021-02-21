@@ -90,3 +90,19 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+@media screen and (max-width: 768px) {
+    .solution{
+        padding: 20px 0;
+    }
+    .solution__left{
+        width: 100%;
+    }
+    .solution__left__box{
+        padding: 20px;
+    }
+    .solution__left__text{
+        font-size: 14px;
+    }
+}

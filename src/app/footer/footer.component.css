@@ -99,4 +99,15 @@
     .footer__row{
         grid-template-columns: 1fr;
     }
+    .footer__main{
+        margin-top: 15px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer__main li + li{
+        margin: 8px 0 0 0;
+    }
+    .footer__info{
+        margin-top: 20px;
+    }
 }

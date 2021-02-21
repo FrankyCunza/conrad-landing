@@ -49,6 +49,9 @@
 
 @media screen and (max-width: 768px) {
     .header__row{
-        display: grid;
+        display: flex;
+    }
+    .header__nav{
+        display: none;
     }
 }
