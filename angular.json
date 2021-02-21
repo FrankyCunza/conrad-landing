@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "conrad-landing"
+  "defaultProject": "conrad-landing",
+  "cli": {
+    "analytics": "cf24f442-c6a4-4e0b-9543-cc79f1ecff7d"
+  }
 }

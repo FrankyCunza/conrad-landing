@@ -1,0 +1,44 @@
+.header{
+    padding: 22px 0;
+}
+
+.header__row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__menu{
+    display: flex;
+}
+
+.header__menu li{
+
+}
+
+.header__menu li a{
+    display: block;
+    padding: 10px 20px;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+.header__whatsapp__link{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    background: linear-gradient(180deg, #27D467 0%, #2DA771 138.89%), #27D467;
+    border-radius: 33px;
+}
+.header__whatsapp__link i{
+    font-size: 22px;
+    margin-right: 5px;
+}
