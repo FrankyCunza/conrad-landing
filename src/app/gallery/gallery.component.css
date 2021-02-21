@@ -31,6 +31,16 @@
     height: 100%;
     object-fit: cover;
 }
+.gallery__item p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    position: absolute;
+    left: 20px;
+    bottom: 122px;
+}
 
 
 
