@@ -34,4 +34,11 @@ export class GalleryComponent implements OnInit {
     ]
   }
 
+  slider(index, group) {
+    if(group == 'thumbs') {
+      document.getElementById('gallery__items').style.transform = `translateX(-${index}00%)`;
+      console.log(index);
+    }
+  }
+
 }

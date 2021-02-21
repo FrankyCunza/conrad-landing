@@ -5,13 +5,13 @@
 
 .gallery__content{
     position: relative;
-    
+    overflow: hidden;
 }
 
 .gallery__items{
     display: flex;
     flex-wrap: nowrap;
-    overflow: hidden;
+    transition: all 0.5s;
 }
 
 .gallery__item{
