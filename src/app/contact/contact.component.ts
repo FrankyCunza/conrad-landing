@@ -52,11 +52,29 @@ export class ContactComponent implements OnInit {
       "timestamp_opt":"",
       "tags":[]
     }
-    const lheaders = new HttpHeaders;
-    lheaders.set('Access-Control-Allow-Origin', '*',)
-    lheaders.set('authorization:', 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17')
-    lheaders.set('Content-Type', 'application/json',)
-    this.http.post('https://us17.api.mailchimp.com/3.0/lists/33d7e5750f/members?skip_merge_validation=true', JSON.stringify(data), {headers: lheaders}).subscribe(res => {
+    const lheaders = new HttpHeaders();
+    // lheaders.set('Access-Control-Allow-Origin', '*',)
+    lheaders.set('authorization', 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17')
+    // lheaders.set('Content-Type', 'application/json',)
+
+    // 'Content-Type': 'application/json',
+    // 'Accept': 'application/json',
+    // 'Access-Control-Allow-Headers': 'Content-Type',
+    const headerDict = {
+      'authorization': 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17'
+    }
+    // new HttpHeaders({'authorization': 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17'})
+
+    // 'Content-Type': 'application/json',
+    const mheaders = new HttpHeaders();
+    mheaders.set(
+      'authorization', 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17'
+    )
+      console.log(mheaders)
+    const requestOptions = {                                                                                                                                                                                 
+      headers: new Headers(headerDict), 
+    };
+    this.http.post('https://us17.api.mailchimp.com/3.0/lists/33d7e5750f/members?skip_merge_validation=true', JSON.stringify(data), {headers: mheaders}).subscribe(res => {
       console.log(res);
     })
   }
