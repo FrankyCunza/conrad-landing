@@ -8,6 +8,7 @@ import { PacsComponent } from './pacs/pacs.component';
 import { RisComponent } from './ris/ris.component';
 import { AdvantageComponent } from './advantage/advantage.component';
 import { SolutionComponent } from './solution/solution.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SolutionComponent } from './solution/solution.component';
     PacsComponent,
     RisComponent,
     AdvantageComponent,
-    SolutionComponent
+    SolutionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
