@@ -110,3 +110,30 @@
 .gallery__button--right{
     right: 20px;
 }
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .gallery__item p{
+        left: 10px;
+        bottom: 10px;
+    }
+    .gallery__thumbs{
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .gallery__thumbs__item{
+        display: inline-block;
+    }
+    .gallery__thumbs__item + .gallery__thumbs__item{
+        margin-left: 4px;
+    }
+}

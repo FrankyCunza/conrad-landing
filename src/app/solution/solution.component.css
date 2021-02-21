@@ -145,6 +145,14 @@
     }
     .solution__left{
         width: 100%;
+        float: none;
+    }
+    .solution__right{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
     }
     .solution__left__box{
         padding: 20px;
@@ -160,5 +168,25 @@
     }
     .solution__left__text{
         font-size: 14px;
+    }
+
+    .solution__slider__content{
+        height: 350px;
+    }
+    .solution__thumbs{
+        position: relative;
+        margin-top: 10px;
+        display: inline-block;
+        white-space: nowrap;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        overflow-x: auto;
+    }
+    .solution__thumbs__item{
+        display: inline-block;
+    }
+    .solution__thumbs__item + .solution__thumbs__item{
+        margin-left: 4px;
     }
 }
