@@ -7,6 +7,7 @@ import { FrontComponent } from './front/front.component';
 import { PacsComponent } from './pacs/pacs.component';
 import { RisComponent } from './ris/ris.component';
 import { AdvantageComponent } from './advantage/advantage.component';
+import { SolutionComponent } from './solution/solution.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AdvantageComponent } from './advantage/advantage.component';
     FrontComponent,
     PacsComponent,
     RisComponent,
-    AdvantageComponent
+    AdvantageComponent,
+    SolutionComponent
   ],
   imports: [
     BrowserModule
