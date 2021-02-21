@@ -148,6 +148,10 @@ body {
     margin-top: 10px;
     color: var(--gray);
 }
+.box__text span{
+    color: var(--orange);
+    font-weight: bold;
+}
 .box__text--white{
     color: #FFFFFF;
 }
