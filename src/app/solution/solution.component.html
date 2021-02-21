@@ -18,8 +18,19 @@
     
             <div class="solution__right">
                 <div class="solution__slider">
-                    <div class="solution__slider__item">
-                        <img src="../../assets/images/solution1.png" alt="">
+                    <div class="solution__slider__content" id="solution__slider__content">
+                        <ng-container *ngFor="let item of images; let i = index">
+                            <div class="solution__slider__item" id="solution__slider__item--{{i}}">
+                                <img src="../../assets/images/{{item.image}}.png" alt="">
+                            </div>
+                        </ng-container>
+                    </div>
+                    <div class="solution__thumbs">
+                        <ng-container *ngFor="let item of images; let i = index">
+                            <div class="solution__thumbs__item" id="solution__thumbs__item--{{i}}" [class.solution__thumbs__item--active]="i === 0" (click)="sliderSolutions(i);">
+                                <img src="../../assets/images/{{item.image}}.png" alt="">
+                            </div>
+                        </ng-container>
                     </div>
                 </div>
             </div>
