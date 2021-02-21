@@ -4,6 +4,7 @@
 :root {
     --green: #0EB35B;
     --blue: #324994;
+    --blue-gradient: linear-gradient(180deg, #324994 0%, #6380E0 100%), #324994;
     --font-one: 'Source Sans Pro', sans-serif;
     --gray: #333333;
     --orange: #F2994A;
@@ -102,6 +103,12 @@ body {
     line-height: 120%;
     color: var(--blue)
 }
+.title__two--light{
+    color: #FFFFFF;
+}
+.title__two--light span{
+    color: var(--orange);
+}
 
 
 
@@ -131,12 +138,16 @@ body {
     font-size: 20px;
     line-height: 160%;
     color: var(--green);
-    margin: 15px 0;
+    margin-top: 15px;
 }
 .box__text{
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
     line-height: 140%;
+    margin-top: 10px;
     color: var(--gray);
+}
+.box__text--white{
+    color: #FFFFFF;
 }
