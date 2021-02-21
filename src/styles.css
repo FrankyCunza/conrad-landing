@@ -8,6 +8,7 @@
     --font-one: 'Source Sans Pro', sans-serif;
     --gray: #333333;
     --orange: #F2994A;
+    --tablet-breakpoint: 642px;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -59,6 +60,8 @@ a{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 
@@ -118,6 +121,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 50px;
+}
+@media screen and (max-width: 768px) {
+    .boxes{
+        grid-template-columns: 1fr;
+    }
 }
 .box{
 
