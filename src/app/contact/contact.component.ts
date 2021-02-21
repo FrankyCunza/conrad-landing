@@ -15,23 +15,21 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  private lheaders = new HttpHeaders().set('authorization', 'Basic a0ca60628a35ebdcf4743210da53ed0a-us17');
+  // private lheaders = new HttpHeaders().set('Access-Control-Allow-Origin', '*');
+  // private lheaders = new HttpHeaders();
   // https://us17.api.mailchimp.com/2.0/lists/subscribe.json?apikey=a0ca60628a35ebdcf4743210da53ed0a-us17&id=33d7e5750f&email[email]=conrad7@gmail.com&merge_vars[MMERGE3]=65555555&merge_vars[FNAME]=John&merge_vars[LNAME]=Doe&double_optin=false&send_welcome=false
   submit(e) {
     e.preventDefault();
+    // this.lheaders.append('Content-Type', 'application/json');
+    // this.lheaders.append("Access-Control-Allow-Methods", "DELETE, POST, GET, OPTIONS")
+    // this.lheaders.append("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With")
+    // this.lheaders.append('authorization', 'Basic a0ca60628a35ebdcf4743210da53ed0a-us17');
+    console.log(this.lheaders)
     console.log("cargando")
-    // const data = {
-    //   members: [
-    //     {
-    //       email_address: "pruebita@gmail.com",
-    //       status: 'subscribed',
-    //       merge_fields: {
-    //         FNAME: 'pruebita1@gmail.com',
-    //         LNAME: 'pruebita pruebita'
-    //       }
-    //     }
-    //   ]
-    // }
-    // const postData = JSON.stringify(data);
+    // lheaders.set('Access-Control-Allow-Origin', '*',)
+    // lheaders.set('authorization', 'Basic a0ca60628a35ebdcf4743210da53ed0a-us17')
+    // lheaders.set('Content-Type', 'application/json',)
     const data = {
       "email_address":"laptop@gmail.com",
       "email_type":"text",
@@ -52,29 +50,8 @@ export class ContactComponent implements OnInit {
       "timestamp_opt":"",
       "tags":[]
     }
-    const lheaders = new HttpHeaders();
-    // lheaders.set('Access-Control-Allow-Origin', '*',)
-    lheaders.set('authorization', 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17')
-    // lheaders.set('Content-Type', 'application/json',)
 
-    // 'Content-Type': 'application/json',
-    // 'Accept': 'application/json',
-    // 'Access-Control-Allow-Headers': 'Content-Type',
-    const headerDict = {
-      'authorization': 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17'
-    }
-    // new HttpHeaders({'authorization': 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17'})
-
-    // 'Content-Type': 'application/json',
-    const mheaders = new HttpHeaders();
-    mheaders.set(
-      'authorization', 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17'
-    )
-      console.log(mheaders)
-    const requestOptions = {                                                                                                                                                                                 
-      headers: new Headers(headerDict), 
-    };
-    this.http.post('https://us17.api.mailchimp.com/3.0/lists/33d7e5750f/members?skip_merge_validation=true', JSON.stringify(data), {headers: mheaders}).subscribe(res => {
+    this.http.post('https://us17.api.mailchimp.com/3.0/lists/33d7e5750f/members?skip_merge_validation=true', JSON.stringify(data), {headers: this.lheaders}).subscribe(res => {
       console.log(res);
     })
   }
