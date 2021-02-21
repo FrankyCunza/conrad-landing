@@ -16,7 +16,8 @@ export class ContactComponent implements OnInit {
   }
   
   // https://us17.api.mailchimp.com/2.0/lists/subscribe.json?apikey=a0ca60628a35ebdcf4743210da53ed0a-us17&id=33d7e5750f&email[email]=conrad7@gmail.com&merge_vars[MMERGE3]=65555555&merge_vars[FNAME]=John&merge_vars[LNAME]=Doe&double_optin=false&send_welcome=false
-  submit() {
+  submit(e) {
+    e.preventDefault();
     console.log("cargando")
     // const data = {
     //   members: [
@@ -53,7 +54,7 @@ export class ContactComponent implements OnInit {
     }
     const lheaders = new HttpHeaders;
     lheaders.set('Access-Control-Allow-Origin', '*',)
-    lheaders.set('authorization: apikey', 'a0ca60628a35ebdcf4743210da53ed0a-us17')
+    lheaders.set('authorization:', 'apikey a0ca60628a35ebdcf4743210da53ed0a-us17')
     lheaders.set('Content-Type', 'application/json',)
     this.http.post('https://us17.api.mailchimp.com/3.0/lists/33d7e5750f/members?skip_merge_validation=true', JSON.stringify(data), {headers: lheaders}).subscribe(res => {
       console.log(res);
