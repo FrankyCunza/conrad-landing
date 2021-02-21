@@ -102,6 +102,12 @@
     .solution__left__box{
         padding: 20px;
     }
+    .solution__left__title{
+        font-size: 28px;
+    }
+    .solution__left__title span{
+        font-size: 34px;
+    }
     .solution__left__text{
         font-size: 14px;
     }

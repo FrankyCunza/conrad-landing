@@ -1,5 +1,5 @@
 .front{
-
+    padding: 45px 0;
 }
 
 .front__row{
@@ -7,6 +7,9 @@
     align-items: center;
 }
 
+.front__right, .front__left{
+    flex: 1;
+}
 
 .front__shortDescription{
     width: 275px;
@@ -56,6 +59,9 @@
 @media screen and (max-width: 768px) {
     .front__row{
         flex-wrap: wrap;
+    }
+    .front__right, .front__left{
+        flex: auto;
     }
     .front__title{
         font-size: 24px;

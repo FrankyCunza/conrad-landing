@@ -10,6 +10,7 @@ import { AdvantageComponent } from './advantage/advantage.component';
 import { SolutionComponent } from './solution/solution.component';
 import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AdvantageComponent,
     SolutionComponent,
     FooterComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
