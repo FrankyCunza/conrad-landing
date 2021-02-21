@@ -69,6 +69,7 @@
     cursor: pointer;
     border-radius: 4px;
     border: 3px solid transparent;
+    transition: all 0.3s
 }
 .gallery__thumbs__item + .gallery__thumbs__item{
     margin-left: 8px;
@@ -87,6 +88,7 @@
 
 
 .gallery__button{
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
