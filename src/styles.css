@@ -103,6 +103,7 @@ body {
 @media screen and (max-width: 768px) {
     .title__two{
         font-size: 30px;
+        margin-bottom: 20px;
     }
 }
 .title__two i {
@@ -152,6 +153,7 @@ body {
 @media screen and (max-width: 768px) {
     .boxes{
         grid-template-columns: 1fr;
+        row-gap: 30px;
     }
 }
 .box{
@@ -182,10 +184,12 @@ body {
     line-height: 140%;
     margin-top: 10px;
     color: var(--gray);
+    padding-right: 25px;
 }
 @media screen and (max-width: 768px) {
     .box__text{
         font-size: 14px;
+        padding-right: 0;
     }
 }
 .box__text span{

@@ -102,6 +102,9 @@
     .solution__left__box{
         padding: 20px;
     }
+    .solution__left__box::before{
+        display: none;
+    }
     .solution__left__title{
         font-size: 28px;
     }
