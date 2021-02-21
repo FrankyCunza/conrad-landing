@@ -9,6 +9,7 @@ import { RisComponent } from './ris/ris.component';
 import { AdvantageComponent } from './advantage/advantage.component';
 import { SolutionComponent } from './solution/solution.component';
 import { FooterComponent } from './footer/footer.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     RisComponent,
     AdvantageComponent,
     SolutionComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule
