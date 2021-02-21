@@ -5,8 +5,24 @@
 
 .gallery__content{
     position: relative;
+    
 }
-.gallery__content::before{
+
+.gallery__items{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.gallery__item{
+    flex-shrink: 0;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+}
+.gallery__item::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -17,13 +33,6 @@
     max-height: 80%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
     filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.08));
-    border-radius: 6px;
-}
-
-.gallery__item{
-    width: 100%;
-    max-height: 600px;
-    overflow: hidden;
     border-radius: 6px;
 }
 .gallery__item img{

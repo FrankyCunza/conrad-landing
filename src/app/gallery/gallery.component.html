@@ -3,23 +3,18 @@
         <h3 class="title__two"><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i>Galería</h3>
         <div class="gallery__row">
             <div class="gallery__content">
-                <div class="gallery__item">
-                    <img src="../../assets/images/solution1.png" alt="">
-                    <p>Cras posuere iaculis urna in interdum. Morbi eget sapien vitae nulla posuere bibendum. Quisque eu diam feugiat, accumsan urna sit amet, vehicula nunc.</p>
+                <div class="gallery__items">
+                    <div class="gallery__item" *ngFor="let item of images; let index = i">
+                        <img src="../../assets/images/{{item.image}}.png" alt="">
+                        <p>{{item.description}}</p>
+                    </div>
                 </div>
                 <div class="gallery__thumbs">
-                    <div class="gallery__thumbs__item gallery__thumbs__item--active">
-                        <img src="../../assets/images/solution1.png" alt="">
-                    </div>
-                    <div class="gallery__thumbs__item">
-                        <img src="../../assets/images/solution1.png" alt="">
-                    </div>
-                    <div class="gallery__thumbs__item">
-                        <img src="../../assets/images/solution1.png" alt="">
-                    </div>
-                    <div class="gallery__thumbs__item">
-                        <img src="../../assets/images/solution1.png" alt="">
-                    </div>
+                    <ng-container *ngFor="let item of images; let i = index">
+                        <div class="gallery__thumbs__item" [class.gallery__thumbs__item--active]="i === 0">
+                            <img src="../../assets/images/{{item.image}}.png" alt="">
+                        </div>
+                    </ng-container>
                 </div>
                 <div class="gallery__buttons">
                     <button type="button" class="gallery__button gallery__button--left">
