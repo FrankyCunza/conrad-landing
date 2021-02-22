@@ -88,7 +88,7 @@
 .solution__slider__item{
     flex-shrink: 0;
     border-radius: 6px;
-    overflow: hidden;
+    overflow: hidden; 
     width: 100%;
     position: relative;
 }
