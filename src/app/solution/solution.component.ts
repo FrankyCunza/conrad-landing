@@ -12,23 +12,23 @@ export class SolutionComponent implements OnInit {
   ngOnInit(): void {
     this.images = [
       {
-        image: 'gallery1',
+        image: 'solution1',
         description: 'Imagen 1'
       },
       {
-        image: 'gallery2',
+        image: 'solution2',
         description: 'Imagen 2'
       },
       {
-        image: 'gallery3',
+        image: 'solution3',
         description: 'Imagen 3'
       },
       {
-        image: 'gallery4',
+        image: 'solution4',
         description: 'Imagen 4'
       },
       {
-        image: 'gallery5',
+        image: 'solution5',
         description: 'Imagen 5'
       }
     ]
