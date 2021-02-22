@@ -13,23 +13,23 @@ export class GalleryComponent implements OnInit {
     this.images = [
       {
         image: 'gallery1',
-        description: 'Imagen 1'
+        description: ''
       },
       {
         image: 'gallery2',
-        description: 'Imagen 2'
+        description: ''
       },
       {
         image: 'gallery3',
-        description: 'Imagen 3'
+        description: ''
       },
       {
         image: 'gallery4',
-        description: 'Imagen 4'
+        description: ''
       },
       {
         image: 'gallery5',
-        description: 'Imagen 5'
+        description: ''
       }
     ]
   }
