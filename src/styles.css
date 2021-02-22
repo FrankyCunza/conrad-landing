@@ -189,6 +189,21 @@ body {
     color: var(--gray);
     padding-right: 25px;
 }
+.box__link{
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--blue);
+}
+.box__link i {
+    font-size: 14px;
+    margin-right: 4px;
+}
 @media screen and (max-width: 768px) {
     .box__text{
         font-size: 14px;
